@@ -1,6 +1,7 @@
 AutomationFinalProjectSkillo:
 This repository hosts a Java test automation project developed using Maven, aimed at testing a web application. The project utilizes Selenium WebDriver and TestNG for automated testing.
 
+
 Project Structure:
 The project is organized as follows:
 
@@ -9,6 +10,7 @@ src/main/object: Contains Java classes representing different pages and objects 
 src/test/java: Includes test classes that leverage the objects defined in the 'object' package to perform automated tests on the web application.
 
 src/test/resources: Holds additional resources used in testing, such as screenshots and uploaded files for specific test scenarios.
+
 
 
 Dependencies:
@@ -23,6 +25,7 @@ TestNG: Version 7.7.0
 Apache Commons IO: Included implicitly for file manipulation
 
 JetBrains Annotations: Used for annotation support
+
 
 
 Test Suite Configuration:
@@ -41,6 +44,7 @@ UserCreatePostTest
 UserLogoutTest
 
 
+
 Test Execution
 To run the automated tests, execute the following Maven command in the terminal:
 
@@ -49,8 +53,8 @@ mvn clean test
 This command triggers the execution of the test suite configured in the testng.xml file.
 
 
-Before and After Test Logic
 
+Before and After Test Logic:
 The TestObject class defines common setup and teardown logic for tests:
 
 Before Suite: Cleans the screenshots directory and sets up the WebDriver.
@@ -60,14 +64,15 @@ Before Method: Initializes the WebDriver instance before each test method.
 After Method: Captures a screenshot in case of test failure and quits the WebDriver instance.
 
 
-Screenshots
 
+Screenshots: 
 Screenshots for failed test cases are stored in the src/test/resources/screenshots directory. The directory is cleaned before each test suite run.
 
 
-Contributing
 
+Contributing:
 Contributions to this project are welcome! If you'd like to contribute, please follow the guidelines outlined in CONTRIBUTING.md.
+
 
 
 License
