@@ -1,10 +1,16 @@
 AutomationFinalProjectSkillo
+
 This repository hosts a Java test automation project developed using Maven, aimed at testing a web application. The project utilizes Selenium WebDriver and TestNG for automated testing.
 
+
 Project Structure
+
 The project is organized as follows:
+
 src/main/object: Contains Java classes representing different pages and objects in the web application, such as Header, HomePage, LoginPage, ProfilePage, PostPage, and RegistrationPage.
+
 src/test/java: Includes test classes that leverage the objects defined in the 'object' package to perform automated tests on the web application.
+
 src/test/resources: Holds additional resources used in testing, such as screenshots and uploaded files for specific test scenarios.
 
 Dependencies
