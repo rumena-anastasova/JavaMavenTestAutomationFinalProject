@@ -20,27 +20,20 @@ TestNG: Version 7.7.0
 Apache Commons IO: Included implicitly for file manipulation
 JetBrains Annotations: Used for annotation support
 
+
 Test Suite Configuration
 The test suite configuration is defined in the testng.xml file located at the root of the project. The suite includes the following test classes:
-
 VerifyHomePageTest
-
 HomePageScrollTest
-
 UserRegistrationTest
-
 UserLoginTest
-
 UserCreatePostTest
-
 UserLogoutTest
 
 
 Test Execution
 To run the automated tests, execute the following Maven command in the terminal:
-
 mvn clean test
-
 This command triggers the execution of the test suite configured in the testng.xml file.
 
 
