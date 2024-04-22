@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Web test suite" verbose="1">
+    <test name="smoke">
+        <classes>
+            <class name="VerifyHomePageTest"></class>
+            <class name="HomePageScrollTest"></class>
+            <class name="UserRegistrationTest"></class>
+            <class name="UserLoginTest"></class>
+            <class name="UserCreatePostTest"></class>
+            <class name="UserLogoutTest"></class>
+        </classes>
+    </test>
+</suite>
