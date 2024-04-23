@@ -14,6 +14,7 @@ public class UserCreatePostTest extends TestObject {
                 {"rumi","123456", "5499", postPicture, caption},
         };
     }
+
     @Test(dataProvider = "getUser")
     public void testCreatePost(String username, String password, String userId, File postPicture, String caption){
         WebDriver webDriver = super.getWebDriver();
@@ -47,4 +48,5 @@ public class UserCreatePostTest extends TestObject {
 
         Assert.assertTrue(profilePage.isUrlLoaded(userId), "Current page in not profile page for " + userId + " user");
     }
+
 }

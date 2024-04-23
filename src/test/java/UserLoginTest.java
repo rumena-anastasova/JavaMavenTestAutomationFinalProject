@@ -1,14 +1,10 @@
-import io.github.bonigarcia.wdm.WebDriverManager;
 import object.Header;
 import object.HomePage;
 import object.LoginPage;
 import object.ProfilePage;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
-
-import java.util.concurrent.TimeUnit;
 
 public class UserLoginTest extends TestObject{
     @DataProvider(name="getUser")

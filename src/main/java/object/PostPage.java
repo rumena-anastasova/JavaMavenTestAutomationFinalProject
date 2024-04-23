@@ -23,10 +23,11 @@ public class PostPage {
         return newPostTitle.isDisplayed();
     }
 
+
     public void uploadPicture(File file){
         WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(30));
-        WebElement uploadFile = wait.until(ExpectedConditions.elementToBeClickable(
-                By.xpath("//*[@class='form-group']//div/input[@type='file']")));
+        WebElement uploadFile = webDriver.findElement(
+                By.xpath("//*[@class='form-group']/input[@type='file']"));
         uploadFile.sendKeys(file.getAbsolutePath());
     }
 
