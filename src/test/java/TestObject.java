@@ -28,7 +28,7 @@ public class TestObject {
         this.webDriver = new ChromeDriver();
         this.webDriver.manage().window().maximize();
         this.webDriver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
-        this.webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+        this.webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
     }
 
     @AfterMethod
